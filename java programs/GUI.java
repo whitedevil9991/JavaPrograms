@@ -5,7 +5,7 @@ public class GUI {
 /*static = keyword */
 /* void = return type */
 /* main = method name */
-/* String args[] = array of string type */
+/* String[]args = array of string type */
     public static void main(String[]args) {
 
         String name = JOptionPane.showInputDialog("enter your name");
