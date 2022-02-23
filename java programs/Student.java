@@ -26,9 +26,10 @@ public class Student {
         sname="unknown";
         marks=1;
     }
-    public Student(int i,String n,float m)
-        //local variables or parameters { 
+    public Student(int i,String n,float m) 
+        //local variables or parameters  
         //constructor with parameters
+        {
         sid=i;
         sname=n;
         marks=m;
