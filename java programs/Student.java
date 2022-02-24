@@ -89,7 +89,7 @@ public class Student {
         
         Student s3=new Student(40,"shivam",30.4f);
 
-        Student.showExamCenter(); //calling static method using class name
+        Student.showExamCenter(); //calling static method using class name i.e showExamCenter
         
     }
     
