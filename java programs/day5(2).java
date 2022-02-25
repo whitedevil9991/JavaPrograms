@@ -1,4 +1,7 @@
 public class day5(2) {
+
+    //ArrayToMethod
+
     public void displayArr(float a[]) //declaration
     {
         for(int i=0;i<a.length;i++) 
@@ -6,6 +9,8 @@ public class day5(2) {
             System.out.println(a[i]);
         }
     }
+
+
     public static void main(String[] args) 
     {
         float[] marr; //declaration
@@ -19,5 +24,6 @@ public class day5(2) {
             System.out.println("Enter "+i+"array element");
             marr[i]=in.nextFloat(); //
         }
-}
+        ArrayToMethod o1=new ArrayToMethod
+    }
 }
