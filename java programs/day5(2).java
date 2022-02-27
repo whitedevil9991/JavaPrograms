@@ -1,4 +1,5 @@
-public class day5(2) {
+import java.util.Scanner;
+public class ArrayToMethod {
 
     //ArrayToMethod
 
@@ -11,19 +12,35 @@ public class day5(2) {
     }
 
 
-    public static void main(String[] args) 
+    public static void main(String[] args)  //main method
     {
         float[] marr; //declaration
         marr=new float[5]; //memory allocation
-    
 
-        Scanner in=new Scanner(System.in);//creating a scanner to take input from user
+        /* marr[0]=23.4f; //allocate data
+        marr[1]=23.4f; 
+        marr[2]=23.4f; 
+        marr[3]=23.4f; 
+        marr[4]=23.4f; 
+        */
+    
+        Scanner in=new Scanner(System.in);
+        //creating a scanner to take input from user
         float t;//declaration
+
         for(int i=0;i<marr.length;i++) //condition
         {
             System.out.println("Enter "+i+"array element");
             marr[i]=in.nextFloat(); //
         }
-        ArrayToMethod o1=new ArrayToMethod
+        System.out.println("array by using enhanced for loop");
+
+        //enhance for loop/foreach loop
+        for(float t:marr)
+        {
+            System.out.println(t);
+        }
+        ArrayToMethod o1=new ArrayToMethod();
+        o1.displayArr(marr);
     }
 }
