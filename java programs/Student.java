@@ -13,7 +13,7 @@ public class Student {
     private float marks;
     static String exam_center; //this is static variable
     //this executed before the main method
-    //this is accessible by all objects
+    //this is allocated once and this is accessible by all objects
 
     {
         //for static variable initialisation
@@ -57,6 +57,7 @@ public class Student {
     public void getMarks(float m) {
         marks=m;
     }
+    //setter-getter = 
     public static void showExamCenter() 
     //this is a static method as it has the static keyword
     //static method can only call static data 
