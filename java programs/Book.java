@@ -13,12 +13,14 @@ public class Book
     }
 
     public Book(String a,float p,String b)
+    //constructor with parameters
     {
         author=a;
         price=p;
         publication=b;   
     }
     public display() 
+    //class named display
     {
         System.out.println("author name"+author+"\t price"+price+"\t publication"+publication);
     }
