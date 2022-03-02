@@ -28,7 +28,8 @@ public class DemoInheritance
     }
 
     public static void main(String[] args) 
-    {//this is the main method
+    {
+        //this is the main method
         return "food type"+food_type+"no of legs"+no_of_legs+"type"+type;
         //TODO auto-generated method stub
     }
