@@ -16,6 +16,12 @@ public class AnimalTest
 
         Cat c2=new Cat("non-veg",4,"white"); //creating a new object with parameters
         System.out.println(c2);
+
+        Dog d1=new Dog();
+        System.out.println(d1);
+        
+        Dog d2=new Dog("non-veg",4,"german shepherd");
+        System.out.println(d2);
         }
     
 }

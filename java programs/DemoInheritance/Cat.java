@@ -7,7 +7,13 @@ public class Cat extends Animal {
      * inheritance is done by using extends keyword 
      * TYPES OF INHERITANCE -- single chain, heirarchy, 
      * in java one sub class can only have one super class
+     * 
      * i.e multiple inheritance is not suppported in java
+     * 
+     * Uses of inheritance:
+     * 1.reusability
+     * 2.extensibility
+     * 
      * 
      * A--B----c
      * 
@@ -32,6 +38,11 @@ public class Cat extends Animal {
     public Cat(String ft, int n1, String c) {
         super(ft,n1);
         color=c;
+    }
+
+    public void eat(){
+        //System.out.println("Animal eats"); --instead of this, use the below statement to inherit
+        super.eat();
     }
     public String toString() {
         return super.toString()+"\t color:"+color;

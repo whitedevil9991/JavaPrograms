@@ -4,6 +4,7 @@ public class wrapperclass {
         int num=100;
         //Integer in=new Integer(num);
 
+        //wrapper class is to store the primtive data type
         Integer in=num; //autoboxing
         //here 'in' is a class and 'num' is stored in 'in'
 

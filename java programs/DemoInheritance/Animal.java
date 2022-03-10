@@ -15,12 +15,15 @@ public class DemoInheritance
         } //here you alloted values to the default constructor
     }
 
-    public Animal(String  f,int n,String t)
+    public Animal(String f,int n,String t)
     {
         //this is a constructor with parameters
         food_type="Omnivore";
         no_of_legs=4;
         type="mammal";
+    }
+    public void eat(){
+        System.out.println("Animal eats");
     }
     public String toString() 
     {
