@@ -31,7 +31,7 @@ public class DemoVarArgs {
     /*
     this is the main method 
     public = access modifier
-    static = 
+    static = executed first
     void = return data type
     main = 
     String[] args = 

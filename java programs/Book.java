@@ -1,3 +1,5 @@
+import javax.swing.text.PlainView;
+
 public class Book 
 {
     private String author;
@@ -19,11 +21,23 @@ public class Book
         price=p;
         publication=b;   
     }
+
+    public void setAuthour(String x) {
+        authour=x;
+    }
     public display() 
     //class named display
     {
         System.out.println("author name"+author+"\t price"+price+"\t publication"+publication);
     }
+    public String toString()
+    {
+        
+    }
+
+
+
+
     public static void main(String[] args) 
     {
         pu
