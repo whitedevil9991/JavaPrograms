@@ -1,6 +1,6 @@
 import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Vector;
+import java.util.Iterator; //importing to use Iterator
+import java.util.Vector; //importing to use vector
 
 public class ListDemo {
     /*Collection Framework = group of objects (to avoid the drawback of arrays)
@@ -33,7 +33,17 @@ public class ListDemo {
     NevigableMap-searching
     classes--- TreeMap
 
+    Properties class
     Comparator and comparable---used for comparison of objects
+
+    Comparable - it is in 'java.lang' package
+    it has method int compareTo(Object o)
+    it is used when a class compares objects of itself
+
+    Comparator-java.util
+    it has method int compare(Object o1,Object o2)
+    It is used to compare objects of two different classes
+    it is used as third party
 
     Iterator-traversing
     */
@@ -66,10 +76,12 @@ public class ListDemo {
            System.out.println(arr.get(i));
        } --but you cant use traditional 'for' method use 'for each' instead*/
 
-       for(int x : arr) {
+       for(int x : arr) 
+       {
            System.out.println(x);
            
        }
+
        Iterator it=arr.iterator(); // when you use a iterator a pointer is created to the next element
        while(it.hasNext())
        { // this tells you if there is a next element or not --returns true or false
