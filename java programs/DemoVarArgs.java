@@ -5,16 +5,14 @@ public class DemoVarArgs {
     Works same as an array
     One method can have only one parameter as elipse
      */
-    public void multiply(String s,float f,int... n)
+    public void multiply(String s,float f,int... n){
     /*
     this is a class named multiply with a parameter 
-    you can use the 'elipse' only at the end
+    you can use the 'elipse' only at the end i.e '.....n'
     you are taking multiple n variables 
     */
-    {
         int m=1;
-        for(int t:n) 
-        {
+        for(int t:n) {
             m=m*n[i]; //same as ( m*n[i] = m*t )
         
         /* same as the above for loop 
@@ -27,16 +25,7 @@ public class DemoVarArgs {
         }
     }
 
-    public static void main(String[] args)
-    /*
-    this is the main method 
-    public = access modifier
-    static = executed first
-    void = return data type
-    main = 
-    String[] args = 
-    */
-    {
+    public static void main(String[] args){
         DemoVarArgs d1=new DemoVarArgs(); //creating a DemoVarArgs object named 'd1'
         d1.multiply();
         d1.multiply(12,2);

@@ -8,20 +8,23 @@ public class CircleArea
     //take radius from user and pass it to method calculateArea
     //print area in main method
 
-    public float calculateArea(float r) //this is a class calculateArea
+    public float calculateArea(float r) 
     {
-        float a=3.14f*r*r; //you have to write '34.3f'
+        float a=3.14f*r*r;
         return a;
     }
 
-    public static void main(String[] args) //mainMethod
+    public static void main(String[] args)
     {
-        float r,res; //declaring r,res
-        Scanner in=new Scanner(System.in); //takes the input from the user
+        float r,res;
+
+        Scanner in=new Scanner(System.in); 
         System.out.println("enter radius"); 
+
         r=in.nextFloat(); //ConvertsTheinputToFloat
 
         CircleArea c1=new CircleArea();
+
         res=c1.calculateArea(r);
 
         System.out.println("area of circle:"+res);

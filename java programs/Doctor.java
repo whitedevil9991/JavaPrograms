@@ -1,4 +1,4 @@
-public class Day5(doctor) {
+public class Doctor {
 
     public static void main(String[] args) 
     {

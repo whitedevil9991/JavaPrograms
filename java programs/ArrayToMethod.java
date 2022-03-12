@@ -3,10 +3,8 @@ public class ArrayToMethod {
 
     //ArrayToMethod
 
-    public void displayArr(float a[]) //declaration
-    {
-        for(int i=0;i<a.length;i++) 
-        {
+    public void displayArr(float a[]){
+        for(int i=0;i<a.length;i++) {
             System.out.println(a[i]);
         }
     }
@@ -28,16 +26,14 @@ public class ArrayToMethod {
         //creating a scanner to take input from user
         float t;//declaration
 
-        for(int i=0;i<marr.length;i++) //condition
-        {
+        for(int i=0;i<marr.length;i++) {
             System.out.println("Enter "+i+"array element");
             marr[i]=in.nextFloat(); //
         }
         System.out.println("array by using enhanced for loop");
 
         //enhance for loop/foreach loop
-        for(float t:marr)
-        {
+        for(float t:marr){
             System.out.println(t);
         }
         ArrayToMethod o1=new ArrayToMethod();
