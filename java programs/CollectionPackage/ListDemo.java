@@ -28,10 +28,10 @@ public class ListDemo {
 
 
     Map-key value pair (to-store two values like EmployeeName-EmployeeID)
-    classes--- HashMap 
+    classes--- HashMap(searching)
     SortedMap-sorted map
     NevigableMap-searching
-    classes--- TreeMap
+    classes--- TreeMap(sorting)
 
     Properties class
     Comparator and comparable---used for comparison of objects
@@ -43,7 +43,7 @@ public class ListDemo {
     Comparator-java.util
     it has method int compare(Object o1,Object o2)
     It is used to compare objects of two different classes
-    it is used as third party
+    it is used as third party class which will compare any two classes
 
     Iterator-traversing
     */
