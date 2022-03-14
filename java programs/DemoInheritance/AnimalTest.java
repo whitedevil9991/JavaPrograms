@@ -7,8 +7,7 @@ public class AnimalTest
         // creating a object using previous Animal program named a1
         System.out.println(a1);
 
-        Bird a2=new Bird(); 
-        //creating a object using previous Animal program named a2
+        Bird a2=new Bird(); //new bird named a2
         System.out.println(a2);
 
         Cat c1=new Cat();
