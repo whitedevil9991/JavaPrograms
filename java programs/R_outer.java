@@ -1,10 +1,10 @@
 import DemoInheritance.InnerClass.R_outer.RInner;
 
 public class InnerClass {
-    /**inner classes are only through outer class so more secure
-     * they are hidden and cannot be accessed by outside world
-     * outer class private objects are directly accessible by inner class
-     * outer class cant access any member of inner class directly
+    /**inner classes only accessible through outer class so more secure
+     * they are hidden and cannot be accessed by outside
+     * outer class private members are directly accessible by inner class
+     * where as the vice versa is not possible
      * 
      * inner classes are secure as they are only accessible through outer class
      * Types of inner class :
@@ -13,29 +13,37 @@ public class InnerClass {
      * 3)Method local inner class
      * 4)Ananymous inner class: anonymous inner classes are replaced by lamda expression in js
      * 
-     * static method can only access static data
-     * static inner class can only access static outer class
-     * 
+     * Regular inner class=a class inside a class
      * one outer class object can have multiple inner class objects
      * 
-     * inner class with static keyword is known as static inner class
      * 
      */
-    public class R_outer{
+    public class R_outer //regular inner class
+    {
         private int o;
-        public R_outer() {
+
+        public R_outer()  //outer class
+        {
             o=100;
         }
-        public void RODisplay(int o1) {
+        public R_outer(int o1){
+            o=o1;
+        }
+        public void RODisplay() {
             System.out.println("im Router"+o);
         }
-        class RInner {
+        class RInner //inner class
+        {
             private int i;
+
+            public RInner(){
+                i=230;
+            }
             public RInner(int x){
                 i=x;
             }
             public void RODisplay(){
-                System.out.println("inside Rinner:"+i);
+                System.out.println("inside Rinner:"+i+o);
             }
         }
     }
@@ -45,7 +53,7 @@ public class InnerClass {
 
         RInner in=r.new RInner();
         in.RIDisplay();
-        RInner in2=new RInner();
+        RInner in2=r.new RInner();
         in2.RODisplay();
     }
     
