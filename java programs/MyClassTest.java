@@ -1,5 +1,9 @@
 import mypack.MyClass; //you can import other class-es like this
 import java.util.*; // the * means you are importing the entire java
+/**public is accessible anywhere in the package
+ * protected is accessible anywhere in the package but 
+ * default is same as public
+ */
 public class MyClassTest {
 
     public static void main(String[] args) {

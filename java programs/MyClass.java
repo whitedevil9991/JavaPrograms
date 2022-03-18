@@ -20,5 +20,15 @@ public class MyClass {
     public void setNum(int num) {
         this.num=num;
     }
+    public String getStr(){
+        return str;
+    }
+    public void setStr(String str){
+        this.str=str;
+    }
+    @Overrride
+    public String toString(){
+        return "MyClass [num="+num+",str="+str+"]";
+    }
     
 }
