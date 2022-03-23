@@ -16,11 +16,49 @@ public class DemoConnection {
 
         System.out.println("connected with database");
 
-        } /*catch (ClassNotFoundException e) {
+        Statement st=con.createStatement();
+        //creates object
+
+        ResultSet rs=st.executeQuery("Select course_id,course");
+
+        } 
+        /*
+        catch (ClassNotFoundException e) 
+        {
             e.printStackTrace();
         }
-        catch(SQLException e) {
+        catch(SQLException e) 
+        {
             e.printStackTrace();
-        }*/
+        }
+        */
     }
 }
+
+/** (rightclick on project )
+ * 
+ * commit()
+ * rollback()
+ * setAutocommit(true)
+ * 
+ * ---Query---
+ * 
+ * 1.static query ----- Statement st=con.createStatement();
+ * 
+ * a.select:select*from student where id=100; -----ResultSet executeQuery()
+ * (ResultSet = it is a pointer to the dataTable, executeQuery = it returns ResultSet) 
+ * 
+ * b.DML(insert update, delete):-------int executeUpdate()
+ * insert into student values(100,"abd,89.6f");
+ * 
+ * 2.dynamic query :-----PreparedStatement pst=con.prepareStatement();
+ * (faster the static)
+ * 
+ * a.select:select*from student where id=?;----- ResultSet executeQuery()
+ * 
+ * b.DML:insert into student values(?,?,?);-----int executeUpdate()
+ * 
+ * 3.stored procedure : methods or functions in sql
+ * -----CallableStatement cst=con.prepareCall();
+ * call-----boolean execute()
+ */
