@@ -1,29 +1,40 @@
+<!--This code has everything you have to know about the basics of everything about creating a
+website using bootstrap from scratch and what is every basic common element-->
+
+
 <!doctype html>
+<!--It is an information to the browser about what document to expect-->
 <html lang="en">
+  <!--this lets browser to know what language the content is on the website so
+  that the browser can return language specific results-->
   <head>
-    <!-- Required meta tags -->
+    <!-- These are mandatory meta tags -->
     <meta charset="utf-8"> <!--this covers all characters and symbols in the world-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--this meta name will change the content according to screen size-->
 
-    <!--this is my css style modifications-->
+    <!--CSS modifications-->
     <style>
-      body {
-        background-color: rgb(229, 243, 242);
+      body 
+      {
+        background:linear-gradient(blue yellow white lightgreen);
+      }
+      div:hover {
+        background-color: skyblue;
       }
     </style>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Bootstrap website</title>
   </head>
   <body>
        <!--ThisisNavBar-->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">HiThere!👋</a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,23 +68,23 @@
           </div> 
         </div>
       </nav>
-    <marquee><h1>Hi, there!</h1></marquee>
+    <marquee><h1>Welcome to my portfolio website!</h1></marquee>
     <!--marquee = gives a scrolling action to the text-->
 
     <!--these are the links to social websites-->
-    <div class="card" style="width:0;">
+    <div class="card text-center" ;>
       <div class="card-body">
         <a href="https://www.linkedin.com/in/pilli-revant-krishna-sagar-3200b4112/" class="btn btn-primary">LinkedIn</a>
       </div>
     </div>
     
-    <div class="card text-center" style="width:0;">
+    <div class="card text-center";">
       <div class="card-body">
         <a href="https://twitter.com/home" class="btn btn-primary">Twitter</a>
       </div>
     </div>
     
-    <div class="card text-end" style="width:0;">
+    <div class="card text-center" ;">
       <div class="card-body">
       <a href="https://github.com/whitedevil9991" class="btn btn-primary">Github</a>
       </div>
