@@ -1,4 +1,10 @@
-//npm i moment, npm init, npm simple-git, node index.js, npm i random
+/*Commands :
+npm i moment
+npm init 
+npm i simple-git
+node index.js
+npm i random
+npm i jsonfile*/
 
 const jsonfile = require('jsonfile');
 //we are importing the jsonfile into our index.js
