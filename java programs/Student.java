@@ -83,7 +83,7 @@ public class Student {
         s2.display();
 
         String s=s2.getSname();
-        System.out.printlb("name of s2:"+s);
+        System.out.println("name of s2:"+s);
 
         s2.setMarks(88.2f);
         s2.display();
