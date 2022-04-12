@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    text-align: center;
+    color: whitesmoke;
+}
+p{
+    padding-top:1%;
+}
+.logos {
+    position:fixed;
+    right:2%;
+    top:2%;
+    word-spacing:10px;
+}
+.center {
+    padding-top: 20%;
+}
+.bottom {
+    padding-top: 200;
+    padding-bottom: 20px;
+}
+
+div{
+    position: -webkit-sticky;
+    position: sticky;
+}
