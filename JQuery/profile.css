@@ -1,10 +1,17 @@
-body {
-    background-color: black;
-    text-align: center;
-    color: whitesmoke;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
-p{
+
+body{
+    font-family: 'Exo', sans-serif;
+    text-align: center;
+}
+.nav{
     padding-top:1%;
+    padding-left: 1%;
 }
 .logos {
     position:fixed;
@@ -23,4 +30,23 @@ p{
 div{
     position: -webkit-sticky;
     position: sticky;
+}
+ /* this is the gradient background*/
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

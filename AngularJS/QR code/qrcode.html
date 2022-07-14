@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Random Qr code generator</title>
+        <link rel="stylesheet" href="qrcode.css">
+    </head>
+    <body>
+        <script src="qrcode.js"></script>
+        <div class="container">
+            <input type="text" id="text"
+            placeholder="Enter text.." onlcick="generateQR()">
+            <button type="button" onclick="generateQR()">
+            Generate QR</button>
+            <div id="qr-image">
+                <span class="error"></span></br>
+                <img src="" id="img" />
+            </div>
+        </div>
+    </body>
+</html>
