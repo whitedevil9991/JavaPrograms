@@ -1,11 +1,8 @@
 import java.sql.DriverManager;
 import java.sql.*;
 public class DemoConnection {
-    
     public static void main(String[] args) 
-    
     {
-
         try 
         {
         Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -13,16 +10,11 @@ public class DemoConnection {
         Connection =con DriverManager.getConnection("jdbc:oracle:think:@localhost:1521:orc1\r\n","system","oracle99");
         //system = user id,  pwd = oracle99
         //Connection = con DriverManager.getConnection("jdbc.mysql:")
-
         System.out.println("connected with database");
-
         Statement st=con.createStatement();
         //creates object
-
         ResultSet rs=st.executeQuery("Select course_id,course");
-
         } 
-        /*
         catch (ClassNotFoundException e) 
         {
             e.printStackTrace();
@@ -31,10 +23,8 @@ public class DemoConnection {
         {
             e.printStackTrace();
         }
-        */
     }
 }
-
 /** (rightclick on project )
  * 
  * commit()
