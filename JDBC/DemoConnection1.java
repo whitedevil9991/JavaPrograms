@@ -1,5 +1,4 @@
 import java.sql.PreparedStatement;
-
 import javax.swing.event.SwingPropertyChangeSupport;
 
 public class DemoConnection1 {
